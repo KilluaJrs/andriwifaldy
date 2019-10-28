@@ -1,0 +1,79 @@
+package cara.membuat.wajik;
+
+
+public class CaraMembuatWajik {
+
+    
+    public static void main(String[] args) {
+        
+        //Pola 1
+        for(int a=0; a<=5; a++){
+            for(int b=0; b<a; b++){
+                System.out.print("*");
+            }System.out.println();
+        }
+        System.out.println();
+        
+        //Pola 2
+        for(int c=1; c<=5; c++){
+            for(int d=5; d>c; d--){
+                System.out.print(" ");
+            }
+            for(int e=0; e<c; e++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        
+        //Piramida
+        for(int i=1; i<=5; i++){
+            for(int j=5; j>i;j--){
+                System.out.print(" ");
+            }
+            for(int k=0; k<(i*2)-1; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        //Piramida Terbalik
+       
+        for(int i=5-1; i>=1; i--)
+        {
+           
+            for(int j=1; j<=5-i; j++){
+           
+                System.out.print(" ");
+            }
+            for(int j=1; j<2*i; j++){
+               
+                System.out.print("*");
+            }   
+                System.out.println("");
+            
+        }
+        System.out.println();
+        //Pola 3
+        for(int i=5; i>0; i--){
+            for(int j=0; j<i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+       
+        //Pola 4
+        for(int i=5; i>0; i--){
+            for(int k=5; k>i; k--){
+                System.out.print(" ");
+            } for(int j=0; j<i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    
+    }
+    
+}

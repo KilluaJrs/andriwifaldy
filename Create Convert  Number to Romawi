@@ -1,0 +1,75 @@
+package petanikode;
+
+import java.util.*;
+public class PetaniKode {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in); 
+        int angka;
+        String rom="";
+        System.out.print("Masukkan angka :");
+        angka=s.nextInt();
+        
+        while(angka <=0 || angka >=5000){
+            System.out.println("Input_Error");
+            break;
+        }
+        while(angka >=1000){
+            rom+="M";
+            angka-=1000;
+        }
+        while(angka >=900){
+            rom+="CM";
+            angka-=900;
+        }
+        while(angka >=500){
+            rom+="D";
+            angka-=500;
+        }
+        while(angka >=400){
+            rom+="CD";
+            angka-=400;
+        }
+        while(angka >=100){
+            rom+="C";
+            angka-=100;
+        }
+        while(angka >=90){
+            rom+="XC";
+            angka-=90;
+        }
+        while(angka >=50){
+            rom+="L";
+            angka-=50;
+        }
+        while(angka >=40){
+            rom+="XL";
+            angka-=40;                   
+        }
+        while(angka >=10){
+            rom+="X";
+            angka-=10;       
+        }
+        while(angka >=9){
+            rom+="IX";
+            angka-=9;
+        }
+        while(angka >=5){
+            rom+="V";
+            angka-=5;
+        }
+        while(angka >=4){
+            rom+="IV";
+            angka-=4;
+        }
+        while(angka >=1){
+            rom+="I";
+            angka-=1;
+        }
+        System.out.println(rom);
+        
+        
+  }}
+       
+    
+    
+   

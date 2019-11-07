@@ -1,0 +1,34 @@
+
+package gasken.oi;
+import java.util.*;
+
+public class GaskenOi {
+       
+    public static void nilaiTerbesar(int []a){
+        int temp=0;
+        int besar1 = a[0];
+        for(int b=0; b<a.length; b++){
+            if(besar1<a[b]){
+                besar1=a[b];
+                temp=b;
+            }
+        }
+        
+        a[temp]=0;
+        int besar2 = a[0];
+        
+        for(int b=0; b<a.length; b++){
+            if(besar2<a[b]){
+                besar2=a[b];
+                
+            }
+        }
+        System.out.println("Terbesar pertama " +besar1+ " dan terbesar kedua " +besar2);
+    }
+    
+    public static void main(String[] args) {
+        int a[] ={23,36,64,12,66};
+        nilaiTerbesar(a);
+    }
+}
+
